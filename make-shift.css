@@ -1402,16 +1402,34 @@ ul{
 }
 /* -----------------Cosmetical Cards----------- */
 .cosmetics{
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;;
+    min-height: 100vh;
     background: #333;
+}
+.cosmetics h1{
+    text-align: center;
+    font-size: 63px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 22px;
+    padding-top: 170px;
+    padding-bottom: 50px;
+    color: #25b8f7;
+}
+.cosmetics h4{
+    text-align: center;
+    font-size: 52px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 20px;
 }
 .cosmCont{
     position: relative;
     display: flex;
-    padding: 80px 40px;
+    padding: 80px 20px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -1421,7 +1439,7 @@ ul{
     position: relative;
     width: 350px;
     height: 180px;
-    background: #333;
+    background: #E2DFD2;
     transition: 0.5s;
 }
 .cosmCard:hover{
@@ -1430,7 +1448,7 @@ ul{
 .cosmCard .lines{
     position: absolute;
     inset: 0;
-    background: #000;
+    background: black;
     overflow: hidden;
 }
 .cosmCard .lines:before{
@@ -1440,12 +1458,13 @@ ul{
     left: 50%;
     width: 600px;
     height: 120px;
-    background: linear-gradient(transparent,#45f3ff,#45f3ff,#45f3ff,transparent);
+    background: linear-gradient(transparent,#2191c1,#2191c1,#2191c1,transparent);
     animation: animate 4s linear infinite;
     animation-play-state: paused;
 }
 .cosmCard:hover .lines::before{
     animation-play-state: running;
+    box-shadow: rgba(0,0,0,0.5);
 }
 @keyframes animate{
     0%{
@@ -1459,7 +1478,7 @@ ul{
     content: '';
     position: absolute;
     inset: 3px;
-    background: #292929;
+    background: black;
 }
 .cosmCard .imgBox{
     position: absolute;
@@ -1468,7 +1487,7 @@ ul{
     width: 150px;
     height: 150px;
     transform: translateX(-50%);
-    background-color: #000;
+    background-color: #333;
     transition: 0.5s;
     z-index: 10;
     overflow: hidden;
@@ -1477,15 +1496,96 @@ ul{
     align-items: center;
 }
 .cosmCard:hover .imgBox{
+    top: 25px;
     width: 250px;
-    height: 250px;
+    height: 200px;
 }
-
-
-
-
-
-
+.cosmCard .imgBox::before{
+    content: '';
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 500px;
+    height: 150px;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(transparent,#ffd700,#ffd700,#ffd700,transparent);
+    animation: animate2 6s linear infinite;
+    animation-play-state: paused;
+}
+.cosmCard:hover .imgBox::before{
+    animation-play-state: running;
+}
+@keyframes animate2{
+    0%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+}
+.cosmCard .imgBox::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background-color: #b6b6b4;
+}
+.cosmCard .imgBox img{
+    position: absolute;
+    width: 100%;
+    padding: 15px;
+    z-index: 1;
+    /* filter: invert(1); */
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.cosmCard:hover .imgBox img{
+    opacity: 1;
+}
+.cosmCard .cosmContent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.cosmCard .cosmContent .cosmDetails{
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(145px);
+}
+.cosmCard:hover .cosmContent .cosmDetails{
+    transform: translateY(0px);
+}
+.cosmCard .cosmContent .cosmDetails h2{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #2191c1;
+    line-height: 1.2em;
+}
+.cosmCard .cosmContent .cosmDetails p{
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+.cosmCard:hover .cosmContent .cosmDetails p,
+.cosmCard:hover .cosmContent .cosmDetails a{
+    opacity: 1;
+}
+.cosmCard .cosmContent .cosmDetails a{
+    display: inline-block;
+    padding: 8px 15px;
+    background: #156b6b;
+    color: black;
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration:none ;
+    opacity: 0;
+    transition: 0.5s;
+}
 
 
 .genInfo{
