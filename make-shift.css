@@ -1476,7 +1476,10 @@ ul{
     justify-content: center;
     align-items: center;
 }
-
+.cosmCard:hover .imgBox{
+    width: 250px;
+    height: 250px;
+}
 
 
 
