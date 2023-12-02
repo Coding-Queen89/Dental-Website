@@ -339,7 +339,8 @@ nav a{
 .why-us{
     display: flex;
     background-color: #156b6b;
-
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .ad{
     display:flex;
@@ -351,8 +352,6 @@ nav a{
     margin: auto;
     margin-top: 80px;
     margin-bottom: 80px;
-    margin-left: 30px;
-    margin-right: 30px;
 
     border-top-left-radius: 80px;
     border-bottom-right-radius: 80px;
@@ -419,6 +418,8 @@ nav a{
 @media (max-width: 1080px){
     .ad{
         display: block;
+        margin-left: 30px;
+        margin-right: 30px;
     }
     .tog{
         margin-right: 20px;
