@@ -1732,9 +1732,14 @@ ul{
     padding-bottom: 1rem;
     box-shadow: 10px 10px 15px 7px rgba(0,0,0,0.2);
 }
-.invisalign .container h1{
+.invisalign .container h1, .invisalign .container h2{
+    margin-bottom: 20px;
     margin-top: 0;
     font-family: 'Times New Roman', Times, serif;
+}
+.invisalign .container h2{
+    font-size: 30px;
+    text-transform: none;
 }
 .invisalign .container span{
     float: left;
