@@ -50,3 +50,12 @@ const observer3 = new IntersectionObserver((entries) => {
 
 const hiddenElements3 = document.querySelectorAll('.hidden3');
 hiddenElements3.forEach((el)=> observer3.observe(el));
+
+
+
+const faqs = document.querySelectorAll(".factual");
+faqs.forEach(factual => {
+    factual.addEventListener("click", () => {
+        factual.classList.toggle("active");
+    });
+});

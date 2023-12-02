@@ -268,7 +268,7 @@ nav a{
     width: 100%;
     min-height: 100%;
     z-index: 98;
-    background:rgba(0, 0, 255, 0.6);
+    background:rgba(0, 0, 255, 0.4);
     backdrop-filter: blur(5px);
     padding-top: 120px;
     transition: 0.4s;
@@ -1705,5 +1705,123 @@ ul{
     }
     .gen-col img{
         margin-left: 20%;
+    }
+}
+.invisalign{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(images/the.jpg);
+    background-size: cover;
+    background-color: #00008b;
+    background-position:initial;
+    background-repeat: no-repeat;
+    opacity: 5;
+}
+.invisalign .row{
+    max-width: 1600px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+.invisalign .container{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 80px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 1rem;
+    box-shadow: 10px 10px 15px 7px rgba(0,0,0,0.2);
+}
+.invisalign .container h1{
+    margin-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.invisalign .container span{
+    float: left;
+    margin-right: 25px;
+    width: 50%;
+}
+.invisalign .container span img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 4,#00008b;
+}
+.invisalign .container p{
+    color: white;
+    text-align: justify;
+    line-height: 28px;
+    font-size: 24px;
+    font-size: 1.4rem;
+}
+.faq{
+    width: 100%;
+    display: flex;
+    margin: 0 3rem;
+    padding-left: 9rem;
+    flex-direction: column;
+    align-items: center;
+}
+.faq h2{
+    font-size: 3rem;
+    margin: 2rem 0rem;
+}
+.factual{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    cursor:pointer;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question h3{
+    font-size: 1.8rem;
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+.answer p{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.6rem;
+    font-size: 1.4rem;
+}
+.factual.active .answer{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+.factual.active svg{
+    transform: rotate(180deg);
+}
+svg{
+    transition: transform .5s ease-in;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@media (max-width: 1000px){
+    .invisalign .row{
+        flex-direction: column;
+        padding-left: 8%;
+        padding-right: 9%;
+    }
+    .invisalign .container{
+        margin-left: 0;
+    }
+    .faq{
+        margin: 0px;
+        padding-left: 0px;
     }
 }
