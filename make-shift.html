@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barad Dental Clinic</title>
     <link rel="stylesheet" href="make-shift.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" type='text/css' href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+    <link rel="stylesheet" type='text/css'
+        href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <script src="chatbot.js" defer></script>
+    <!--It tells teh browser to wait until the page has finished parsing
+    before executing the script-->
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -22,11 +30,11 @@
                 <a href="About.html">About Us</a>
                 <!-- <a href="Services.html">Services</a> -->
                 <div class="dropdown">
-                    <button class="dropbtn">Services  <i class="fa fa-angle-down"></i></button>
+                    <button class="dropbtn">Services <i class="fa fa-angle-down"></i></button>
                     <div class="dropdown-content hidden3">
-                      <a href="General.html">General</a>
-                      <a href="Cosmetics.html">Cosmetics</a>
-                      <a href="surgery.html">Surgery</a>
+                        <a href="General.html">General</a>
+                        <a href="Cosmetics.html">Cosmetics</a>
+                        <a href="surgery.html">Surgery</a>
                     </div>
                 </div>
                 <a href="contact-us.html" class="button hea">Book Online</a>
@@ -51,16 +59,46 @@
             </video>
             <div class="container">
                 <h1>
-                    Welcome to <br class="hide-mob"/>
+                    Welcome to <br class="hide-mob" />
                     <span>Barad</span> DentalClinic
                 </h1>
                 <h3>Offers toptier services from cosmetics to surgery. <br>
-                    Alongside sophisticated equipment, you will surely<br> receive the best care with Arabia's best dentists.</h3>
+                    Alongside sophisticated equipment, you will surely<br> receive the best care with Arabia's best
+                    dentists.</h3>
                 <a href="" class="button tit">Book Online</a>
                 <!-- <h4>Or Call us at: <br><a href="tel:+966 565393118">(05) 65393118</a></h4> -->
             </div>
         </section>
+        <!---------------------ChatBot---------------------->
+        <section class="bot">
+            <button class="chatbot-toggler">
+                <span class="material-symbols-outlined"> mode_comment</span>
+                <span class="material-symbols-outlined"> close</span>
+            </button>
+            <div class="chatbot">
+                <header class="chatting">
+                    <h2>ChatBot</h2>
+                    <span class="close-btn material-symbols-outlined"> close</span>
+                </header>
+                <ul class="chatbox">
+                    <li class="chat incoming">
+                        <span class="material-symbols-outlined">
+                            smart_toy
+                        </span>
+                        <p>Hi there (hand) <br> How can I help you today?</p>
+                    </li>
+                    <!-- <li class="chat outgoing">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </li> -->
+                </ul>
+                <div class="chat-input">
+                    <textarea placeholder="Enter a message..." required></textarea>
+                    <span id="send-btn" class="material-symbols-outlined">send</span>
+                </div>
+            </div>
+        </section>
 
+        <!-- ------------Why us----------------- -->
         <section class="why-us">
             <div class="ad">
                 <div class="text">
@@ -74,7 +112,8 @@
                         <li><i class="fa fa-check-square-o"></i> Supreme Services</li>
                         <li><i class="fa fa-check-square-o"></i> Transparent Pricing</li>
                     </ul>
-                    <p class="quotes">"Every tooth in a man's head is worth more than a diamond."<br>~Miguel de Cirvantes</p>
+                    <p class="quotes">"Every tooth in a man's head is worth more than a diamond."<br>~Miguel de
+                        Cirvantes</p>
                 </div>
                 <div class="tog">
                     <img src="images/banner2.jpg" alt="">
@@ -86,14 +125,20 @@
             <div class="wrapper">
                 <div class="intro">
                     <h1> <i class="fa fa-quote-left"> Dear Patients' Words</i></h1>
-                    <h5>Over a decade, we have maintained our patients' trust. Listen to their unforgettable credit!</h5>
+                    <h5>Over a decade, we have maintained our patients' trust. Listen to their unforgettable credit!
+                    </h5>
                 </div>
                 <div class="cards">
                     <div class="card1 hidden2">
                         <img src="images/user1.jpeg" alt="">
-                        <p>I really have only the best words for this clinic and the doctors that work here. They are all so professional, caring about their patients and also they all have a “very light hand”, which is very important for the patients. Also the staff that is working on the reception is so pleasant, nice and very responsive to the patients at any time of the day.  Special thanks I have for Dr. Abeer and
-                            Dr. Karam, who got to do all the treatments for me perfectly. I highly recommend this clinic to everyone, and I guarantee you that you will have outstanding results 🤗
-                            </p>
+                        <p>I really have only the best words for this clinic and the doctors that work here. They are
+                            all so professional, caring about their patients and also they all have a “very light hand”,
+                            which is very important for the patients. Also the staff that is working on the reception is
+                            so pleasant, nice and very responsive to the patients at any time of the day. Special thanks
+                            I have for Dr. Abeer and
+                            Dr. Karam, who got to do all the treatments for me perfectly. I highly recommend this clinic
+                            to everyone, and I guarantee you that you will have outstanding results 🤗
+                        </p>
                         <h2>Jelena Kovacevic Art</h2>
                         <div class="ratings">
                             <i class="fa fa-star"></i>
@@ -111,10 +156,14 @@
                         <img src="images/user2.jpg" alt="">
                         <p>I was quite impressed by how friendly, tentative and professional everyone was at the clinic.
 
-                            Dr.Ayham is most certainly among one of the best, if not the best dentist I've been to in Saudi Arabia.
-                            Quite a nice fella, was ready to answer any questions I had and even encouraged me to ask, made sure to explain the whole procedure to me and made sure I felt comfortable during my visit.
+                            Dr.Ayham is most certainly among one of the best, if not the best dentist I've been to in
+                            Saudi Arabia.
+                            Quite a nice fella, was ready to answer any questions I had and even encouraged me to ask,
+                            made sure to explain the whole procedure to me and made sure I felt comfortable during my
+                            visit.
 
-                            For anyone that's looking for an amazing clinic, or people terrified of dentists alike but need to take care of their teeth, this is the place to be.</p>
+                            For anyone that's looking for an amazing clinic, or people terrified of dentists alike but
+                            need to take care of their teeth, this is the place to be.</p>
                         <h2>Frshmachine</h2>
                         <div class="ratings">
                             <i class="fa fa-star"></i>
@@ -133,11 +182,15 @@
                 <div class="cardsS">
                     <div class="card3 hidden2">
                         <img src="images/user2.jpg" alt="">
-                        <p>From where should I begin? The clinic? The friendly staff? Appointments availability? Everything here is on point!
+                        <p>From where should I begin? The clinic? The friendly staff? Appointments availability?
+                            Everything here is on point!
 
-                            Dr. Ayham. since I started my treatment with him has been nothing but great, friendly, and supportive! He showed me the treatment plan alongside pros and cons with alternatives! Not much doctors
-                            would go the extra mile like him!! He answered all of my questions in a very short and simple way! Don’t look anywhere else.. you will be in the right caring hands!
-                            </p>
+                            Dr. Ayham. since I started my treatment with him has been nothing but great, friendly, and
+                            supportive! He showed me the treatment plan alongside pros and cons with alternatives! Not
+                            much doctors
+                            would go the extra mile like him!! He answered all of my questions in a very short and
+                            simple way! Don’t look anywhere else.. you will be in the right caring hands!
+                        </p>
                         <h2>Shaker Alshanbari</h2>
                         <div class="ratings">
                             <i class="fa fa-star"></i>
@@ -153,7 +206,7 @@
                 </div>
             </div>
         </section>
-    </section>
+        </section>
 
         <!-- -----------Services Section-------------------- -->
         <section class="grey">
@@ -173,7 +226,8 @@
                         <img src="images/Cosm.jpg">
                         <h3>Cosmetics</h3>
                         <p>Want your smile to shine the brightest? No problem.
-                            We got you! From In Visa Lign to Venirs to  teeth whitening, all is customized to you at the perfect price.</p>
+                            We got you! From In Visa Lign to Venirs to teeth whitening, all is customized to you at the
+                            perfect price.</p>
                         <a href="Cosmetics.html #cosmetics" class="button hea">Learn More</a>
                     </div>
                     <div class="service-col hidden">
@@ -188,7 +242,7 @@
             </div>
         </section>
         <!------------Parallax Effect--------------------------->
-        <section class="par"  id="para">
+        <section class="par" id="para">
             <div class="inside">
                 <div class="promo">
                     <h4>Offers Just for You</h4>
@@ -215,24 +269,28 @@
                     </div>
                     <div class="visit-us">
                         <h1>Visit Us</h1>
-                        <p>We are honoured to be among the doctors of Platinum Tower, and would like you to pay us a visit at the 5th floor, King Fahd road.
+                        <p>We are honoured to be among the doctors of Platinum Tower, and would like you to pay us a
+                            visit at the 5th floor, King Fahd road.
                         </p>
 
-                        <p>  <i class="fa fa-map-marker"></i>  King Fahd Br Rd, Al Faisaliyyah, Jeddah 23442
+                        <p> <i class="fa fa-map-marker"></i> King Fahd Br Rd, Al Faisaliyyah, Jeddah 23442
                         </p>
                         <p>
                             <a href="https://maps.app.goo.gl/GF3MhYCt7jc9d8gH8" rel="noopener" target="_blank">
-                            <strong>Get Directions</strong></a>
+                                <strong>Get Directions</strong></a>
                         </p>
 
                         <p><i class="fa fa-clock-o"></i> Monday & Sunday 12:00 - 08:00 P.M.<br>
-                        Tuesday & Wednesday 10:00 A.M. - 06:00 P.M.<br>
-                        Monday & Sunday 12:00 - 08:00 P.M.</p>
+                            Tuesday & Wednesday 10:00 A.M. - 06:00 P.M.<br>
+                            Monday & Sunday 12:00 - 08:00 P.M.</p>
                     </div>
                 </div>
                 <div class="vistainer">
                     <h1></h1>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14840.324913157827!2d39.176712!3d21.5827522!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d1d82254ef57%3A0x5dc69d32d4ac5b82!2zQmFyYWQgRGVudGFsIENsaW5pYyDYudmK2KfYr9in2Kog2KjYsdivINmE2YTYo9iz2YbYp9mG!5e0!3m2!1sen!2ssa!4v1700486188143!5m2!1sen!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14840.324913157827!2d39.176712!3d21.5827522!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d1d82254ef57%3A0x5dc69d32d4ac5b82!2zQmFyYWQgRGVudGFsIENsaW5pYyDYudmK2KfYr9in2Kog2KjYsdivINmE2YTYo9iz2YbYp9mG!5e0!3m2!1sen!2ssa!4v1700486188143!5m2!1sen!2ssa"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
@@ -261,7 +319,8 @@
                     <div class="foter-col">
                         <h4>Contact Us</h4>
                         <ul>
-                            <li><a href="https://maps.app.goo.gl/GF3MhYCt7jc9d8gH8" rel="noopener" target="_blank">King Fahd Br Rd, Al Faisaliyyah, <br>Jeddah 23442</a></li>
+                            <li><a href="https://maps.app.goo.gl/GF3MhYCt7jc9d8gH8" rel="noopener" target="_blank">King
+                                    Fahd Br Rd, Al Faisaliyyah, <br>Jeddah 23442</a></li>
                             <li><a href="tel:+966 565393118">(05) 65393118</a></li>
                             <li><a href="mailto:ayhamammoura@yahoo.com">ayhamammoura@yahoo.com</a></li>
                         </ul>
@@ -284,4 +343,5 @@
     </main>
     <script src="main.js"></script>
 </body>
+
 </html>
