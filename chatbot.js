@@ -5,7 +5,7 @@ const chatbotToggler = document.querySelector(".chatbot-toggler");
 const chatbotCloseBtn = document.querySelector(".close-btn");
 
 let userMessage;
-const API_KEY = "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";
+const API_KEY = "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";
 //Keep in mind that in the free version, you'll have limited usage.
 //I used my own API key called idk
 //we can learn about API & its options in the request body role, temperature
