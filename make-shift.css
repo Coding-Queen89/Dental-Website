@@ -837,6 +837,11 @@ nav a{
 @media(max-width: 768px){
     .waterContainer{
         flex-direction: row;
+        margin-top: 15%;
+    }
+    .grey h1{
+        font-size: 36px;
+        /* padd-bottom: 50px; */
     }
     .navB{
         margin-bottom: 0;
