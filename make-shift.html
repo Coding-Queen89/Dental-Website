@@ -11,7 +11,8 @@
         href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <link rel="stylesheet" href="chatbot.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
     <script src="chatbot.js" defer></script>
     <!--It tells teh browser to wait until the page has finished parsing
     before executing the script-->
@@ -206,13 +207,51 @@
                 </div>
             </div>
         </section>
-        </section>
 
         <!-- -----------Services Section-------------------- -->
         <section class="grey">
+            <div class="snow" id="snow"></div>
+            <h1>For the best Care you Ever Practiced!</h1>
+            <div class="services">
+                <div class="waterContainer">
+                    <div class="drop" style="--clr:#ff0f5b;">
+                        <div class="service-col hidden">
+                            <!-- <img src="images/gen.jpg"> -->
+                            <h3>01</h3>
+                            <p>General Services <br>
+                                Be it fillings, cleanings, X-Rays or the like, you will find your cure with us!
+                            </p>
+                            <a href="General.html" class="button learnMore">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="drop" style="--clr:#be01fe;">
+                        <div class="service-col hidden">
+                            <!-- <img src="images/Cosm.jpg"> -->
+                            <h3>02</h3>
+                            <p>Cosmetical Services <br>
+                                Want your smile to shine the brightest? All is customized for you.</p>
+                            <a href="Cosmetics.html #cosmetics">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="drop" style="--clr:#01b4ff;">
+                        <div class="service-col hidden">
+                            <!-- <img src="images/surg.jpeg"> -->
+                            <h3>03</h3>
+                            <p>Surgical Services <br>
+                                Cutting-edge implants, periodontogy and so much more!
+                            </p>
+                            <a href="surgery.html" class="button learnMore">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- <section class="grey">
             <div class="services">
                 <h1>For the Best Care you Ever Practiced!</h1>
-                <!-- to add content in three separate columns -->
+                to add content in three separate columns
                 <div class="row">
                     <div class="service-col hidden">
                         <img src="images/gen.jpg">
@@ -240,7 +279,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!------------Parallax Effect--------------------------->
         <section class="par" id="para">
             <div class="inside">
@@ -342,6 +381,8 @@
         </footer>
     </main>
     <script src="main.js"></script>
+    <script src="particles.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

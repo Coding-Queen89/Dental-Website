@@ -1,0 +1,64 @@
+/* section{
+    max-width: 1600px;
+    margin: auto;
+} */
+.snowContainer{
+    top: 0;
+    background:url(images/the.jpg) no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+.snowflakes{
+    text-align: center;
+}
+.snowflakes span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(images/snowflake.png);
+    margin: -280px 40px 54px -34px;
+
+    -webkit-animation: snowflakes 10s infinite linear;
+    -moz-animation: snowflakes 10s infinite linear;
+    /* animation: snowflakes 10s infinite linear; */
+}
+.snowflakes span:nth-child(2n+5){
+    -webkit-animation-delay:  1.7s;
+    -moz-animation-delay:  1.7s;
+}
+.snowflakes span:nth-child(3n+10){
+    -moz-animation-delay:  2.7s;
+    -webkit-animation-delay:  2.7s;
+    /* animation-delay: 2.7s; */
+}
+.snowflakes span:nth-child(7n+2){
+    -moz-animation-delay:  3.5s;
+    -webkit-animation-delay:  3.5s;
+    /* animation-delay: 3.5s; */
+}
+.snowflakes span:nth-child(4n+5){
+    -webkit-animation-delay:  5.5s;
+    -moz-animation-delay:  5.5s;
+}
+.snowflakes span:nth-child(3n+7){
+    -webkit-animation-delay:  8s;
+    -moz-animation-delay:  8s;
+}
+
+@-webkit-keyframes snowflakes{
+    0%{
+        opacity: 1;
+        -webkit-transform: translate(0,0px) rotateZ(0deg);
+    }
+    75%{
+        opacity: 1;
+        -webkit-transform: translate(100px,600px) rotateZ(270deg);
+    }
+    90%{
+        opacity: 0;
+        -webkit-transform: translate(150px,800px) rotateZ(300deg);
+    }
+}

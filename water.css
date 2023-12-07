@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: red;
+}
+.waterContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    gap: 40px 60px;
+    background: blue;
+}
+.fallingSnow{
+    background: aqua;
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.waterContainer .drop{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),
+    25px 35px 20px rgba(0,0,0,0.05),
+    25px 30px 30px rgba(0,0,0,0.05),
+    inset -20px -20px 25px rgba(255,255,255,0.9);
+    transition: 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.waterContainer .drop:nth-child(1){
+    /*fancy border radius*/
+    border-radius: 47% 53% 70% 30% / 30% 43% 57% 70%;
+}
+.waterContainer .drop:nth-child(2){
+    border-radius: 69% 31% 28% 72% / 43% 63% 37% 57%
+}
+.waterContainer .drop:nth-child(3){
+    /*fancy border radius*/
+    border-radius: 36% 64% 34% 66% / 42% 35% 65% 58%
+}
+.waterContainer .drop:nth-child(1):hover{
+    border-radius: 50%;
+    background-image: url(images/gen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.waterContainer .drop:nth-child(2):hover{
+    border-radius: 50%;
+    background-image: url(images/Cosm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.waterContainer .drop:nth-child(3):hover{
+    border-radius: 50%;
+    background-image: url(images/surg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.waterContainer .drop::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+.waterContainer .drop::after{
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 110px;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+.waterContainer .drop .service-col{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+}
+.waterContainer .drop .service-col h3{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #eff0f4;
+    border-radius: 50%;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),
+    inset -2px -5px 10px rgba(255,255,255,1),
+    15px 15px 10px rgba(0,0,0,0.05),
+    15px 10px 15px rgba(0,0,0,0.025);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: var(--clr);
+}
+/* .waterContainer .drop .service-col img{
+    border-radius: 50%;
+} */
+
+.waterContainer .drop .service-col a{
+    position: relative;
+    padding: 10px 25px;
+    background-color: var(--clr);
+    text-decoration: none;
+    color: white;
+    border: 25px;
+    font-weight: 500;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.25);
+    opacity: 0.75;
+    transition: 0.5s;
+}
+.waterContainer .drop .service-col a:hover{
+    opacity: 1;
+}
+.waterContainer .drop .service-col a::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.5);
+}

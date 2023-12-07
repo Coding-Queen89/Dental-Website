@@ -1,3 +1,4 @@
+// import API_KEY from "./apikey.js";
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 const chatbox = document.querySelector(".chatbox");
@@ -5,7 +6,7 @@ const chatbotToggler = document.querySelector(".chatbot-toggler");
 const chatbotCloseBtn = document.querySelector(".close-btn");
 
 let userMessage;
-const API_KEY = "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";
+const API_KEY = "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";
 //Keep in mind that in the free version, you'll have limited usage.
 //I used my own API key called idk
 //we can learn about API & its options in the request body role, temperature
