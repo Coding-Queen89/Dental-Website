@@ -115,7 +115,7 @@ header {
 .language a{
     right: 0;
 }
-@media (max-width: 1000px){
+@media (max-width: 1500px){
     .Bar{
         display: none;
     }
@@ -319,7 +319,7 @@ nav a{
     background-color: black;
     color: #ffd700;
 }
-@media (min-width:1000px){
+@media (min-width:1500px){
     .mobile-nav, .hamburger{
         display: none;
     }
@@ -603,14 +603,14 @@ nav a{
     height: 150vh;
     z-index: 10;
 }
-.snow2{
+/* .snow2{
     position: absolute;
     margin-left: 70%;
-    width: 10%;
+    width: 4%;
     height: 150vh;
     z-index: 10;
-}
-.services:not(.snow2){
+} */
+.services{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -651,6 +651,7 @@ nav a{
     inset -20px -20px 25px rgba(255,255,255,0.7);
     transition: 0.5s ease-in-out;
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     z-index: 96;
