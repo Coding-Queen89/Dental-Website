@@ -7,6 +7,106 @@
 .chatbot, .chatbot-toggler{
     z-index: 999999;
 }
+html{
+    font-size: 10px;
+}
+body{
+    overflow-x: hidden;
+}
+.navlist{
+    display: flex;
+    /* width: 100%; */
+}
+.navlist li{
+    line-height: 4rem;
+    position: relative;
+}
+.submenu li{
+    line-height: 4rem;
+}
+.navlist a{
+    display: block;
+    color: #eee;
+    padding: 1rem 1.5rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 650ms;
+}
+.navlist .dr{
+    padding: 0rem 1.5rem;
+    font-size: 1.5rem;
+    text-transform: none;
+
+}
+.navlist .fa{
+    font-size: 14px;
+}
+.navlist a:hover{
+    color: #92A4A8;
+}
+.bxn{
+    padding: 0;
+    display: inline-block;
+    background-color: #24262b;
+    border: 2px solid #24262b;
+    border-radius: 5rem;
+    transition: background-color 650ms;
+}
+.bxn:hover{
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.submenu{
+    width: 20rem;
+    display: block;
+    position: absolute;
+    border-top: 3px solid #00008b;
+    background-color: #2C3E53;
+    z-index: 100;
+    top: 16rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 650ms ease;
+}
+.submenu::before{
+    content: '';
+    position: absolute;
+    top: -2.5rem;
+    left: 3rem;
+    /*this is to create a triangle and if transparent was a color
+    the triangle would be a square. https://www.youtube.com/watch?v=wlCPOwBr7no 23:29*/
+    border: 1.2rem solid transparent;
+    border-bottom-color: #00008b;
+}
+.submenu .submenu::before{
+    top: .9rem;
+    left: -2.5rem;
+    border: 1.2rem solid transparent;
+    /*this will make the little arrow to point to the left*/
+    border-right-color: #00008b;
+}
+.submenu .submenu{
+    border-top: none;
+    border-left: 3px solid #00008b;
+    top: 0;
+    left: 160%;
+}
+/*teh order of these two classes differ.*/
+.navlist li:hover > .submenu{
+    top: 6rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.submenu li:hover > .submenu{
+    top: 0;
+    left: 100%;
+}
+li.move-right{
+    margin: auto 0 auto auto;
+    line-height: initial;
+}
 .container{
     /* max-width: 1600px; */
     margin: 0 auto;
@@ -78,9 +178,7 @@ header {
 }
 .is-scrolling{
     width: 100%;
-    background-image: url(images/blue_back.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #2C3E53;
     opacity: 0.97;
     .container{
         padding-top: 8px;
@@ -99,7 +197,7 @@ header {
 .navigation{
     display: block;
 }
-.Bar{
+/* .Bar{
     display: grid;
     column-gap: 20px;
     row-gap: 3px;
@@ -119,14 +217,14 @@ header {
     .Bar{
         display: none;
     }
-}
+}*/
 nav a{
     color: white;
     padding-top: 13px;
     font-size: 24px;
     text-decoration: none;
 }
-.Bar a::after{
+/* .Bar a::after{
     content: '';
     width: 0%;
     height: 2px;
@@ -137,7 +235,7 @@ nav a{
 }
 .Bar a:hover::after{
     width: 100%;
-}
+} */
 .banner{
     position: relative;
     min-height: 100vh;
@@ -155,12 +253,19 @@ nav a{
     right: 0;
     z-index: 0;
 }
-@media(min-width: 769px) and (max-width: 1000px){
+@media(min-width: 901px) and (max-width: 1080px){
     #myVid{display:none;}
     .banner{
         background-image: url(images/banner1.jpg);
         background-position: center right;
         background-size: cover;
+    }
+    .container{
+        padding-left: 29px;
+    }
+    .navlist a{
+        padding: 1rem 1rem;
+        font-size: 1.4rem;
     }
 }
 @media(max-width: 768px){
@@ -170,22 +275,66 @@ nav a{
         background-position: center bottom;
         background-size: cover;
     }
-    .language{
+    /* .language{
         column-gap: 7px;
         justify-content: right;
         z-index: 45;
-    }
+    } */
 }
 .container{
     position: relative;
     z-index: 1;
 }
-@media(max-width: 1024px){
+@media(max-width: 900px){
     .container{
         padding-left: 64px;
         padding-right: 64px;
     }
-
+    .navlist{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+        background:rgba(44,62,83, 0.7);
+        -webkit-backdrop-filter:blur(5px);
+        backdrop-filter: blur(5px);
+        padding-top: 120px;
+        overflow-y: scroll;
+        transition: 0.4s;
+    }
+    .navlist > li{
+        line-height: 6rem;
+    }
+    .submenu{
+        position: initial;
+        border: 3px solid transparent;
+        border-left-color: #00008b;
+        background-color: transparent;
+        max-height: 0;
+        margin-left: 1rem;
+    }
+    .submenu::before{
+        display: none;
+    }
+    .bxn{
+        margin-left: 1rem;
+    }
+    .navlist li:hover >.submenu{
+        opacity: 1;
+        visibility: visible;
+        max-height: initial;
+    }
+    .navlist.is-active{
+        /* display: flex; */
+        left: 0;
+    }
+    .hamburger{
+        display: block;
+        z-index: 101;
+    }
 }
 .container h1{
     color: white;
@@ -319,7 +468,7 @@ nav a{
     background-color: black;
     color: #ffd700;
 }
-@media (min-width:1000px){
+@media (min-width:901px){
     .mobile-nav, .hamburger{
         display: none;
     }
@@ -593,16 +742,19 @@ nav a{
     /* margin: auto; */
     justify-content: center;
     align-items: center;
-    height: fit-content;
+    height: 150vh;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
     background-color: #2C3E53;
     z-index: 90;
     width: 100%;
 }
 .snow{
+    display: flex;
     position: absolute;
-    width: 10%;
-    height: 150vh;
-    z-index: 10;
+    width: 100%;
+    height: 300vh;
+    z-index: 0;
 }
 /* .snow2{
     position: absolute;
@@ -616,7 +768,9 @@ nav a{
     flex-direction: column;
     justify-content: center;
     align-items: center ;
-    min-height: 150vh;
+    height: 150vh;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
     background:rgba(9, 9, 79, 0.2);
     z-index: 90;
 }
@@ -840,14 +994,26 @@ nav a{
     background-color: lightseagreen;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }*/
-@media(max-width: 768px){
-    .waterContainer{
-        flex-direction: row;
-        margin-top: 15%;
+@media(max-width: 1080px){
+    .services,.grey{
+        height: -moz-fit-content;
+        height: fit-content;
     }
-    .grey h1{
-        font-size: 36px;
-        /* padd-bottom: 50px; */
+    .waterContainer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .snow{
+        display: flex;
+        /* height: 250vh; */
+    }
+    .work h1{
+        font-size: 34px;
+        position: absolute;
+        margin: auto;
+        padding: 5%;
+        font-weight: 600;
     }
     .navB{
         margin-bottom: 0;
@@ -858,7 +1024,7 @@ nav a{
     background-image: url(images/para.jpg);
     background-size: cover;
     position: relative;
-    height: 100vh;
+    height: 200vh;
 }
 .promo{
     position: absolute;
@@ -872,7 +1038,7 @@ nav a{
     align-items: center;
     display: inline-block;
     justify-content: center;
-        background-color: lightsteelblue;
+    background-color: lightsteelblue;
     margin-top: 35%;
     margin-bottom: 5%;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);

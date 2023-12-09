@@ -16,7 +16,7 @@ particlesJS('snow',
   {
     "particles": {
       "number": {
-        "value": 400,
+        "value": 70,
         "density": {
           "enable": true,
           "value_area": 800
@@ -52,7 +52,7 @@ particlesJS('snow',
         }
       },
       "size": {
-        "value": 20,
+        "value": 30,
         "random": true,
         "anim": {
           "enable": false,
