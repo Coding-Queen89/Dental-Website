@@ -589,17 +589,18 @@ nav a{
 }
 /*-------- service --------------*/
 .grey{
-    max-width: 1600px;
-    margin: auto;
+    /* max-width: 1600px; */
+    /* margin: auto; */
     justify-content: center;
     align-items: center;
     height: fit-content;
-    background-color: #00008b;
+    background-color: #2C3E53;
     z-index: 90;
+    width: 100%;
 }
 .snow{
     position: absolute;
-    width: 15%;
+    width: 10%;
     height: 150vh;
     z-index: 10;
 }
@@ -619,15 +620,19 @@ nav a{
     background:rgba(9, 9, 79, 0.2);
     z-index: 90;
 }
-.grey h1{
-    /* display: flex; */
+.work{
+    width: 950px;
+    margin: auto;
+    background-color: #2C3E53;
+}
+.work h1{
     font-size: 54px;
     color: white;
-    /* text-align: center; */
+    text-align: center;
     position: absolute;
     padding-top: 10%;
     margin-bottom: 5%;
-    padding-left: 17%;
+    /* padding-left: 17%; */
     font-weight: 600;
 }
 .waterContainer{
@@ -638,8 +643,8 @@ nav a{
     align-items: center;
     flex-wrap: wrap;
     padding: 100px 0;
-    margin-left: 10%;
-    gap: 40px 20px;
+    /* margin-left: 10%; */
+    gap: 40px 60px;
 }
 .waterContainer .drop{
     position: relative;

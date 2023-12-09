@@ -16,7 +16,7 @@ particlesJS('snow',
   {
     "particles": {
       "number": {
-        "value": 800,
+        "value": 400,
         "density": {
           "enable": true,
           "value_area": 800
@@ -36,27 +36,27 @@ particlesJS('snow',
           "nb_sides": 5
         },
         "image": {
-          "src": "images/snowflake.png",
+          "src": "images/sf.png",
           "width": 100,
           "height": 100
         }
       },
       "opacity": {
-        "value": 0.4,
+        "value": 0.1,
         "random": false,
         "anim": {
           "enable": false,
-          "speed": 6,
+          "speed": 1,
           "opacity_min": 0.1,
           "sync": false
         }
       },
       "size": {
-        "value": 10,
+        "value": 20,
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 40,
+          "speed": 1,
           "size_min": 0.1,
           "sync": false
         }
@@ -70,7 +70,7 @@ particlesJS('snow',
       },
       "move": {
         "enable": true,
-        "speed": 2,
+        "speed": 1,
         "direction": "bottom",
         "random": false,
         "straight": false,

@@ -3,45 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type='text/css' href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <link rel="stylesheet" href="water.css">
     <title>Document</title>
 </head>
 <body>
-    <section class="services">
-        <div class="fallingSnow">
-            <div class="waterContainer">
-                <div class="drop" style="--clr:#ff0f5b;">
-                    <div class="service-col hidden">
-                        <!-- <img src="images/gen.jpg"> -->
-                        <h3>01</h3>
-                        <p>Is your tooth bothering you? You don't need to worry anymore!
-                            Be it fillings, cleanings, X-Rays or the like, you will find your cure with us!
-                        </p>
-                        <a href="General.html" class="button hea">Learn More</a>
-                    </div>
-                </div>
-                <div class="drop" style="--clr:#be01fe;">
-                    <div class="service-col hidden">
-                        <!-- <img src="images/Cosm.jpg"> -->
-                        <h3>02</h3>
-                        <p>Want your smile to shine the brightest? No problem.
-                            We got you! From In Visa Lign to Venirs to teeth whitening, all is customized to you at the
-                            perfect price.</p>
-                        <a href="Cosmetics.html #cosmetics" class="button hea">Learn More</a>
-                    </div>
-                </div>
-                <div class="drop" style="--clr:#01b4ff;">
-                    <div class="service-col hidden">
-                        <!-- <img src="images/surg.jpeg"> -->
-                        <h3>03</h3>
-                        <p>Search no more!
-                            Your lost teeth will be restored with cutting-edge implants, and that's the least we can do!
-                        </p>
-                        <a href="surgery.html" class="button hea">Learn More</a>
-                    </div>
-                </div>
-            </div>
+    <header>
+        <div class="container">
+            <a href=""><img src="images/logoP.png" alt=""></a>
+            <nav class="language">
+                <a href="make-shiftArabic.html"><img src="images/saudi.png" alt=""></a>
+                <a href=""><img src="images/english.jpg" alt=""></a>
+            </nav>
+            <nav class="Bar">
+               <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">DropDown <b><i class="fa fa-angle-down"></i></b></a>
+                        <ul>
+                            <li><a href="#">Product 1</a></li>
+                            <li><a href="#">Product 2</a></li>
+                            <li><a href="#">Product 3 <b> > </b> </a>
+                                <ul>
+                                    <li><a href="#">Stupid</a></li>
+                                    <li><a href="#">Idiot</a></li>
+                                    <li><a href="#">Crazy</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="#">Whatever</a></li> -->
+                    <li><a href="#">Whatever <b><i class="fa fa-angle-down"></i></b></a>
+                        <ul>
+                            <li><a href="#">Product 1</a></li>
+                            <li><a href="#">Product 2</a></li>
+                            <li><a href="#">Product 3</a></li>
+                        </ul>
+                    </li>
+               </ul>
+               <a href="contact-us.html" class="button hea">Book Online</a>
+            </nav>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
         </div>
+    </header>
+    <nav class="mobile-nav">
+        <a href="">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="General.html">General Services</a>
+        <a href="Cosmetics.html">Cosmetical Services</a>
+        <a href="surgery.html">Surgical Services</a>
+        <a href="contact-us.html" class="navi">Book Online</a>
+    </nav>
+    <section class="n">
+
     </section>
+    <script src="main.js"></script>
 </body>
 </html>
