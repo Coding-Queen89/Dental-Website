@@ -1,6 +1,6 @@
 window.onload = function(){
     window.addEventListener('scroll',function(e){
-        if(window.pageYOffset >75){
+        if(window.pageYOffset >5){
             document.querySelector("header").classList.add('is-scrolling');
         } else{
             document.querySelector("header").classList.remove('is-scrolling');
@@ -8,7 +8,7 @@ window.onload = function(){
     });
 
     const menu_btn = document.querySelector('.hamburger');
-    const mobile_menu = document.querySelector('.mobile-nav')
+    const mobile_menu = document.querySelector('.navlist')
 
     menu_btn.addEventListener('click',function(){
         menu_btn.classList.toggle('is-active');

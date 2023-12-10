@@ -1,383 +1,51 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-.n{
-    height: 30000000000px;
-}
 body{
-    background-color: burlywood;
+    margin: 0;
 }
-.container{
-    /* max-width: 1600px; */
-    margin: 0 auto;
-    padding-left: 128px;
-    padding-right: 128px;
-    width: 100%;
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
 }
-.button{
-    display: inline-block;
-    color: black;
-    background-color: #ffd700;
-    padding: 12px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
-    transition: 1s;
-}
-.button:hover{
-    color: #ffd700;
-    background-color: black;
-}
-.hea{
-    display: inline-block;
-    padding: 13px 20px;
-    margin-left: 12px;
+header{
     position: relative;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: 1s;
-}
-.button .hea a{
-    color: #000435;
-}
-header {
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-
-    .container {
-        padding-top: 32px;
-        padding-bottom: 32px;
-        display: flex;
-        justify-content: space-between;
-        align-items:center;
-        transition: .3s;
-        opacity: 0;
-        animation: slideTop .5s ease forwards;
-        animation-delay: calc(0.2s*var(--i));
-    }
-}
-@keyframes slideTop {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-.container img{
-    padding-bottom: 2px;
-}
-.is-scrolling{
-    width: 100%;
-    background-image: url(images/blue_back.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.97;
-    .container{
-        padding-top: 8px;
-        padding-bottom: 3px;
-    }
-}
-.container h2 {
-    color: white;
-    text-transform: uppercase;
-    font-size: 32px;
-    font-weight: 900;
-}
-.container h2 span{
-    color: #ffd700;
-}
-.navigation{
-    display: block;
-}
-.Bar{
-    display: grid;
-    column-gap: 20px;
-    row-gap: 3px;
-    grid-template-columns: repeat(4, auto);
-}
-.language{
-    display: grid;
-    justify-content:left;
-    column-gap: 40px;
-    row-gap: 0px;
-    grid-template-columns: repeat(2, auto);
-}
-.language a{
-    right: 0;
-}
-@media (max-width: 1000px){
-    .Bar{
-        display: none;
-    }
-}
-nav a{
-    color: white;
-    padding-top: 13px;
-    font-size: 24px;
-    text-decoration: none;
-}
-/* .Bar a::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #ffd700;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-} */
-.Bar a:hover::after{
-    width: 100%;
-}
-.banner{
-    position: relative;
-    min-height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-    /* background-image: url(images/banner1.jpg); */
-    /* background-position: center right; */
-    background-size: cover;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
 }
-#myVid{
+.background,.foreground{
     position: absolute;
-    min-height: 100vh;
-    min-width: 100%;
-    bottom: 0;
-    right: 0;
-    z-index: 0;
-}
-@media(min-width: 769px) and (max-width: 1000px){
-    #myVid{display:none;}
-    .banner{
-        background-image: url(images/banner1.jpg);
-        background-position: center right;
-        background-size: cover;
-    }
-}
-@media(max-width: 768px){
-    #myVid{display: none;}
-    .banner{
-        background-image: url(images/phone.png);
-        background-position: center bottom;
-        background-size: cover;
-    }
-    .language{
-        column-gap: 7px;
-        justify-content: right;
-        z-index: 45;
-    }
-}
-.container{
-    position: relative;
-    z-index: 1;
-}
-@media(max-width: 1024px){
-    .container{
-        padding-left: 64px;
-        padding-right: 64px;
-    }
-
-}
-.container h1{
-    color: white;
-    font-size: 55px;
-    margin-bottom: 32px;
-    margin-top: 155px;
-}
-.container h1 span{
-    color: #ffd700;
-}
-.container h3{
-    color: white;
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 32px;
-}
-@media (min-width: 501px) and (max-width: 767px){
-    .container{
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-    .container h1{
-        font-size: 45px;
-    }
-    .container h3{
-        font-size: 24px;
-    }
-    .hide-mob{
-        display: none;
-    }
-}
-@media (max-width:500px){
-    .container{
-        padding-left: 32px;
-        padding-right: 32px;
-        padding-top: 15px;
-    }
-    .container h1{
-        font-size: 32px;
-    }
-    .container h3{
-        font-size: 18px;
-    }
-    .hide-mob{
-        display: none;
-    }
-}
-.hamburger{
-    position: relative;
-    display: block;
-    width: 35px;
-    cursor: pointer;
-
-    appearance: none;
-    background: none;
-    outline: none;
-    border: none;
-}
-.hamburger .bar, .hamburger::after, .hamburger::before{
-    content: '';
-    display: block;
     width: 100%;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0px;
-    transition: 0.4s;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
-.hamburger.is-active::before{
-    transform: rotate(-45deg) translate(-8px,6px);
+.background{
+    /*Since our background is twice as far away from us as normal,
+    we need to set the scale. Now it scrolls at a slower speed.*/
+    transform: translateZ(-10px) scale(2);
 }
-.hamburger.is-active::after{
-    transform: rotate(45deg) translate(-9px,-8px);
-}
-.hamburger.is-active .bar{
-    opacity: 0;
-}
-/* -----------Navigation for Phones------------- */
-.mobile-nav {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    min-height: 100%;
-    z-index: 98;
-    background:rgba(0, 0, 255, 0.4);
-    backdrop-filter: blur(5px);
-    padding-top: 120px;
-    transition: 0.4s;
-}
-.mobile-nav.is-active{
-    left: 0;
-}
-.mobile-nav a{
-    display: block;
-    max-width: 500px;
-    margin: 25px auto 10px;
-    text-align: center;
-    margin-bottom: 16px;
-    padding: 12px 16px;
-    font-weight: 500;
-    text-decoration: none;
-}
-.mobile-nav a :not(.navi){
-    width: 100%;
-    color: white;
-}
-.mobile-nav a::after{
-    background-color: #00008b;
-    content: '';
-    width: 0%;
-    display: block;
-    margin: auto;
-    height: 2px;
-    transition: 0.5s;
-}
-.mobile-nav a:hover::after{
-    width: 50%;
-}
-.mobile-nav .navi{
-    color: black;
-    width: fit-content;
-    margin-top: 70px;
-    font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
-    transition: 1s;
-    padding: 12px 16px;
-    background-color: #ffd700;
-}
-.mobile-nav .navi:hover{
-    background-color: black;
-    color: #ffd700;
-}
-@media (min-width:1000px){
-    .mobile-nav, .hamburger{
-        display: none;
-    }
-}
-.tit{
-    display: inline-block;
-    font-weight: bold;
-    color: black;
-    padding: 13px 20px;
-    margin-left: 12px;
-    font-size: 21px;
-    background-color: #ffd700;
-    position: relative;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: 1s;
-    font-family: 'Times New Roman', Times, serif;
+.foreground{
+    transform: translateZ(-5px) scale(1.5);
 }
 
 
-.Bar ul{
-    position: relative;
-}
-.Bar ul li{
-    position: relative;
-    list-style: none;
-    float: left;
-}
-.Bar ul li a{
+.title{
+    font-size: 7rem;
     color: white;
-    font-size: 1.1em;
-    padding:20px 25px;
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
+    text-shadow: 0 0 5px black;
 }
- .Bar ul li a:hover{
-    background-color: #00008b;
- }
-.Bar ul li ul{
-    position: absolute;
-    left: 0;
-    width: 200px;
-    background-color: gray;
-    display: none;
+.sect{
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #2C3E53;
+    color: white;
 }
-.Bar ul li:hover > ul{
-    display: block;
-}
-.Bar ul li ul li{
-    position: relative;
-    width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-}
-.Bar ul li ul li ul{
-    top: 0;
-    left: 200px;
+@media (max-width:900px){
+    .title{
+        font-size: 5rem;
+    }
 }

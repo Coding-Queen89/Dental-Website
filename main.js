@@ -1,6 +1,6 @@
 window.onload = function(){
     window.addEventListener('scroll',function(e){
-        if(window.pageYOffset >450){
+        if(window.pageYOffset >100){
             document.querySelector("header").classList.add('is-scrolling');
         } else{
             document.querySelector("header").classList.remove('is-scrolling');
@@ -47,7 +47,7 @@ window.addEventListener("scroll",function(){
     // console.log("Offset: "+ offset);
     //The offset *0.7 is the value the picture will move which will be less
     //than our offset
-    parallax.style.backgroundPositionY = offset*0.7 + "px";
+    parallax.style.backgroundPositionY = offset*0.4 + "px";
 })
 const observer3 = new IntersectionObserver((entries) => {
     entries.forEach((entry) =>{
