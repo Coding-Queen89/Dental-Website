@@ -1,50 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barad Dental Clinic</title>
     <link rel="stylesheet" href="make-shift.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" type='text/css' href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+    <link rel="stylesheet" type='text/css'
+        href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
+
 <body>
     <header>
         <div class="container">
             <a href=""><img src="images/logoP.png" alt=""></a>
-            <nav class="language">
-                <a href=""><img src="images/saudi.png" alt=""></a>
-                <a href=""><img src="images/english.jpg" alt=""></a>
-            </nav>
-            <nav class="Bar">
-                <a href="make-shift.html">Home</a>
-                <a href="About.html">About Us</a>
-                <!-- <a href="Services.html">Services</a> -->
-                <div class="dropdown">
-                    <button class="dropbtn">Services  <i class="fa fa-angle-down"></i></button>
-                    <div class="dropdown-content hidden3">
-                      <a href="General.html">General</a>
-                      <a href="Cosmetics.html">Cosmetics</a>
-                      <a href="#">Surgery</a>
-                    </div>
-                </div>
-                <a href="contact-us.html" class="button hea">Book Online</a>
-            </nav>
+            <ul class="navlist">
+                <li>
+                    <a href="About.html">About Us</a>
+                    <ul class="submenu">
+                        <li><a href="" class="dr">History</a></li>
+                        <li><a href="" class="dr">Mission</a></li>
+                        <li><a href="" class="dr">Values</a></li>
+                        <li>
+                            <a href="#" class="dr">Our Team</a>
+                            <ul class="submenu">
+                                <li><a href="#" class="dr">Dr. Ayham Ammoura</a></li>
+                                <li><a href="#" class="dr">Dr. Waad</a></li>
+                                <li><a href="#" class="dr">Dr. Shmookh</a></li>
+                                <li><a href="#" class="dr">Dr. Karam Zakzook</a></li>
+                                <li><a href="#" class="dr">Dr. Yamsin</a></li>
+                                <li><a href="#" class="dr">Dr. Ibrahim</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Services
+                        <!-- <i class="fa fa-chevron-down"></i> -->
+                    </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#" class="dr">Cosmetic
+                                <!-- <i class="fa fa-chevron-right"></i> -->
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#" class="dr">Blabla</a></li>
+                                <li><a href="#" class="dr">Blabla</a></li>
+                                <li><a href="#" class="dr">Blabla</a></li>
+                                <li><a href="#" class="dr">Blabla</a></li>
+                                <li><a href="#" class="dr">Blabla</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dr">Preventive
+                                <!-- <i class="fa fa-chevron-right"></i> -->
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#" class="dr">Food</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dr">Food</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dr">More...
+                                        <!-- <i class="fa fa-chevron-right"></i> -->
+                                    </a>
+                                    <!-- <ul class="submenu">
+                                            <li>
+                                                <a href="#">Food</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Food</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Food</a>
+                                            </li>
+                                        </ul> -->
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dr">Restorative
+                                <!-- <i class="fa fa-chevron-right"></i> -->
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#" class="dr">Ugly</a></li>
+                                <li><a href="#" class="dr">Horrendous</a></li>
+                                <li><a href="#" class="dr">Dispicable</a></li>
+                                <li><a href="#" class="dr">Nasty</a></li>
+                                <li><a href="#" class="dr">Horrid</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dr">Orthodontic
+                                <!-- <i class="fa fa-chevron-right"></i> -->
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#" class="dr">Ugly</a></li>
+                                <li><a href="#" class="dr">Horrendous</a></li>
+                                <li><a href="#" class="dr">Dispicable</a></li>
+                                <li><a href="#" class="dr">Nasty</a></li>
+                                <li><a href="#" class="dr">Horrid</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dr">Surgical
+                                <!-- <i class="fa fa-chevron-right"></i> -->
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#" class="dr">Ugly</a></li>
+                                <li><a href="#" class="dr">Horrendous</a></li>
+                                <li><a href="#" class="dr">Dispicable</a></li>
+                                <li><a href="#" class="dr">Nasty</a></li>
+                                <li><a href="#" class="dr">Horrid</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Dental Info</a>
+                    <ul class="submenu">
+                        <li><a href="#" class="dr">Blabla1</a></li>
+                        <li><a href="#" class="dr">Blabla2</a></li>
+                        <li><a href="#" class="dr">Blabla3</a></li>
+                        <li>
+                            <a href="#" class="dr">Shields</a>
+                            <ul class="submenu">
+                                <li><a href="#" class="dr">Platinum Shield</a></li>
+                                <li><a href="#" class="dr">Gold Shield</a></li>
+                                <li><a href="#" class="dr">Silver Shield</a></li>
+                                <li><a href="#" class="dr">Bronze Shield</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Gallery</a>
+                </li>
+                <li class="move-right bxn">
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
             <button class="hamburger">
                 <div class="bar"></div>
             </button>
         </div>
     </header>
-    <nav class="mobile-nav">
+    <!-- <nav class="mobile-nav">
         <a href="make-shift.html">Home</a>
         <a href="About.html">About Us</a>
         <a href="General.html">General Services</a>
         <a href="Cosmetics.html">Cosmetical Services</a>
         <a href="#">Surgical Services</a>
         <a href="" class="navi">Book Online</a>
-    </nav>
+    </nav> -->
     <main class="main">
         <section class="bannServices">
             <!-- <img src="images/about-p.jpg" alt=""> -->
@@ -57,36 +170,32 @@
             </div>
         </section>
     </main>
-    <!-- ---------------services content-------------- -->
-    <section class="grey">
-        <div class="services">
-            <h1>For the Best Care you Ever Practiced!</h1>
-            <!-- to add content in three separate columns -->
+    <!-- ----------------------------Introduction---------------------------- -->
+    <section class="introduction">
+        <div class="container">
             <div class="row">
-                <div class="service-col hidden">
-                    <img src="images/gen.jpg">
-                    <h3>General</h3>
-                    <p>Is your tooth bothering you? You don't need to worry anymore!
-                        Be it fillings, cleanings, X-Rays or the like, you will find your cure with us!
-                    </p>
-                    <a href="General.html" class="button hea">Learn More</a>
+                <div class="intro-col1">
+                    <img src="images/about-p.jpg" alt="">
                 </div>
-                <div class="service-col hidden">
-                    <img src="images/Cosm.jpg">
-                    <h3>Cosmetics</h3>
-                    <p>Want your smile to shine the brightest? No problem.
-                        We got you! From In Visa Lign to Venirs to  teeth whitening, all is customized to you at the perfect price.</p>
-                    <a href="Cosmetics.html" class="button hea">Learn More</a>
-                </div>
-                <div class="service-col hidden">
-                    <img src="images/surg.jpeg">
-                    <h3>Surgery</h3>
-                    <p>Search no more!
-                        Your lost teeth will be restored with cutting-edge implants, and that's the least we can do!
-                    </p>
-                    <a href="" class="button hea">Learn More</a>
+                <div class="intro-col2">
+                    <h2>Fascinating Beauty is our Fortified Key</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. , est quam illo, debitis repudiandae
+                        fugit nostrum
+                        quibusdam reiciendis ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                        rerum earum possimus ipsum laudantium, <br> <br> natus perspiciatis eligendi quibusdam labore ad
+                        ab
+                        suscipit.</p>
                 </div>
             </div>
+        </div>
+    </section>
+    <!-- ---------------Look&FeelBetter----------- -->
+    <section class="lookBetter">
+        <div class="row">
+            <h3>Your Smile will Shine the Brightest</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti placeat ipsa omnis laudantium dicta
+                numquam, deleniti quas nesciunt consectetur est, quidem natus adipisci voluptas nostrum! Nesciunt est
+                odio laboriosam consequuntur?</p>
         </div>
     </section>
     <!-------------------Surger------------------------->
@@ -104,7 +213,9 @@
                     <div class="cosmContent">
                         <div class="cosmDetails">
                             <h2>Invisalign</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ea mollitia consectetur nobis perspiciatis libero. Nam tempora asperiores rem natus fugiat sit, sint at mollitia nostrum, eum minus cum reprehenderit?</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ea mollitia
+                                consectetur nobis perspiciatis libero. Nam tempora asperiores rem natus fugiat sit, sint
+                                at mollitia nostrum, eum minus cum reprehenderit?</p>
                             <a href="#invisalign">Read More</a>
                         </div>
                     </div>
@@ -118,7 +229,9 @@
                     <div class="cosmContent">
                         <div class="cosmDetails">
                             <h2>Whitening</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ea mollitia consectetur nobis perspiciatis libero. Nam tempora asperiores rem natus fugiat sit, sint at mollitia nostrum, eum minus cum reprehenderit?</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ea mollitia
+                                consectetur nobis perspiciatis libero. Nam tempora asperiores rem natus fugiat sit, sint
+                                at mollitia nostrum, eum minus cum reprehenderit?</p>
                             <a href="#white">Read More</a>
                         </div>
                     </div>
@@ -132,7 +245,9 @@
                     <div class="cosmContent">
                         <div class="cosmDetails">
                             <h2>Veneers</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ea mollitia consectetur nobis perspiciatis libero. Nam tempora asperiores rem natus fugiat sit, sint at mollitia nostrum, eum minus cum reprehenderit?</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ea mollitia
+                                consectetur nobis perspiciatis libero. Nam tempora asperiores rem natus fugiat sit, sint
+                                at mollitia nostrum, eum minus cum reprehenderit?</p>
                             <a href="#veneers">Read More</a>
                         </div>
                     </div>
@@ -140,209 +255,55 @@
             </div>
         </div>
     </section>
-    <!--------------------Invisalign----------------------->
-    <section class="invisalign">
-        <div class="row">
-            <div class="container" id="invisalign">
-                <h1>Invisalign</h1>
-                <h2>Your Teeth Set Right</h2>
-                <p><span><img src="images/invisalign.jpg " alt=""></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt molestias impedit, itaque aliquid, adipisci minus odio molestiae, id non at ex repellendus dolor saepe. A aspernatur earum consectetur nihil optio?</p>
+    <div class="faq">
+        <h2>FAQs</h2>
+        <div class="factual">
+            <div class="question">
+                <h3>What are Veneers?</h3>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                </svg>
             </div>
-            <div class="faq">
-                <h2>FAQs</h2>
-                <div class="factual">
-                    <div class="question">
-                        <h3>What is Invisalign?</h3>
-                        <svg width="15" height="10" viewBox="0 0 42 25">
-                            <path
-                                d="M3 3L21 21L39 3"
-                                stroke="white"
-                                stroke-width="7"
-                                stroke-linecap="round"
-                            />
-                        </svg>
-                    </div>
-                    <div class="answer">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et autem quas atque fugiat ipsum tempore sapiente sequi ex ad quam, commodi numquam, animi, quibusdam at nulla! Eligendi quia doloribus vero.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="factual">
-                    <div class="question">
-                        <h3>Why Invisalign?</h3>
-                        <svg width="15" height="10" viewBox="0 0 42 25">
-                            <path
-                                d="M3 3L21 21L39 3"
-                                stroke="white"
-                                stroke-width="7"
-                                stroke-linecap="round"
-                            />
-                        </svg>
-                    </div>
-                    <div class="answer">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et autem quas atque fugiat ipsum tempore sapiente sequi ex ad quam, commodi numquam, animi, quibusdam at nulla! Eligendi quia doloribus vero.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="factual">
-                    <div class="question">
-                        <h3>What are some Benefits?</h3>
-                        <svg width="15" height="10" viewBox="0 0 42 25">
-                            <path
-                                d="M3 3L21 21L39 3"
-                                stroke="white"
-                                stroke-width="7"
-                                stroke-linecap="round"
-                            />
-                        </svg>
-                    </div>
-                    <div class="answer">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et autem quas atque fugiat ipsum tempore sapiente sequi ex ad quam, commodi numquam, animi, quibusdam at nulla! Eligendi quia doloribus vero.
-                        </p>
-                    </div>
-                </div>
-
+            <div class="answer">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et autem quas atque fugiat ipsum tempore
+                    sapiente sequi ex ad quam, commodi numquam, animi, quibusdam at nulla! Eligendi quia doloribus vero.
+                </p>
             </div>
         </div>
-        <div class="row">
-            <div class="container" id="white">
-                <h1>Whitening</h1>
-                <h2>As white As Snow</h2>
-                <p><span><img src="images/whitening.jpg " alt=""></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt molestias impedit, itaque aliquid, adipisci minus odio molestiae, id non at ex repellendus dolor saepe. A aspernatur earum consectetur nihil optio?</p>
+
+        <div class="factual">
+            <div class="question">
+                <h3>Why Veneers?</h3>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                </svg>
             </div>
-            <div class="faq">
-                <h2>FAQs</h2>
-                <div class="factual">
-                    <div class="question">
-                        <h3>What is Whitening</h3>
-                        <svg width="15" height="10" viewBox="0 0 42 25">
-                            <path
-                                d="M3 3L21 21L39 3"
-                                stroke="white"
-                                stroke-width="7"
-                                stroke-linecap="round"
-                            />
-                        </svg>
-                    </div>
-                    <div class="answer">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et autem quas atque fugiat ipsum tempore sapiente sequi ex ad quam, commodi numquam, animi, quibusdam at nulla! Eligendi quia doloribus vero.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="factual">
-                    <div class="question">
-                        <h3>Why whitening</h3>
-                        <svg width="15" height="10" viewBox="0 0 42 25">
-                            <path
-                                d="M3 3L21 21L39 3"
-                                stroke="white"
-                                stroke-width="7"
-                                stroke-linecap="round"
-                            />
-                        </svg>
-                    </div>
-                    <div class="answer">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et autem quas atque fugiat ipsum tempore sapiente sequi ex ad quam, commodi numquam, animi, quibusdam at nulla! Eligendi quia doloribus vero.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="factual">
-                    <div class="question">
-                        <h3>What are some Benefits?</h3>
-                        <svg width="15" height="10" viewBox="0 0 42 25">
-                            <path
-                                d="M3 3L21 21L39 3"
-                                stroke="white"
-                                stroke-width="7"
-                                stroke-linecap="round"
-                            />
-                        </svg>
-                    </div>
-                    <div class="answer">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et autem quas atque fugiat ipsum tempore sapiente sequi ex ad quam, commodi numquam, animi, quibusdam at nulla! Eligendi quia doloribus vero.
-                        </p>
-                    </div>
-                </div>
-
+            <div class="answer">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et autem quas atque fugiat ipsum tempore
+                    sapiente sequi ex ad quam, commodi numquam, animi, quibusdam at nulla! Eligendi quia doloribus vero.
+                </p>
             </div>
         </div>
-        <div class="row">
-            <div class="container" id="veneers">
-                <h1>Veneers</h1>
-                <h2>A HollyWood Smile!</h2>
-                <p><span><img src="images/invisalign.jpg " alt=""></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt molestias impedit, itaque aliquid, adipisci minus odio molestiae, id non at ex repellendus dolor saepe. A aspernatur earum consectetur nihil optio?</p>
+
+        <div class="factual">
+            <div class="question">
+                <h3>What are some Benefits?</h3>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                </svg>
             </div>
-            <div class="faq">
-                <h2>FAQs</h2>
-                <div class="factual">
-                    <div class="question">
-                        <h3>What are Veneers?</h3>
-                        <svg width="15" height="10" viewBox="0 0 42 25">
-                            <path
-                                d="M3 3L21 21L39 3"
-                                stroke="white"
-                                stroke-width="7"
-                                stroke-linecap="round"
-                            />
-                        </svg>
-                    </div>
-                    <div class="answer">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et autem quas atque fugiat ipsum tempore sapiente sequi ex ad quam, commodi numquam, animi, quibusdam at nulla! Eligendi quia doloribus vero.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="factual">
-                    <div class="question">
-                        <h3>Why Veneers?</h3>
-                        <svg width="15" height="10" viewBox="0 0 42 25">
-                            <path
-                                d="M3 3L21 21L39 3"
-                                stroke="white"
-                                stroke-width="7"
-                                stroke-linecap="round"
-                            />
-                        </svg>
-                    </div>
-                    <div class="answer">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et autem quas atque fugiat ipsum tempore sapiente sequi ex ad quam, commodi numquam, animi, quibusdam at nulla! Eligendi quia doloribus vero.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="factual">
-                    <div class="question">
-                        <h3>What are some Benefits?</h3>
-                        <svg width="15" height="10" viewBox="0 0 42 25">
-                            <path
-                                d="M3 3L21 21L39 3"
-                                stroke="white"
-                                stroke-width="7"
-                                stroke-linecap="round"
-                            />
-                        </svg>
-                    </div>
-                    <div class="answer">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et autem quas atque fugiat ipsum tempore sapiente sequi ex ad quam, commodi numquam, animi, quibusdam at nulla! Eligendi quia doloribus vero.
-                        </p>
-                    </div>
-                </div>
-
+            <div class="answer">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et autem quas atque fugiat ipsum tempore
+                    sapiente sequi ex ad quam, commodi numquam, animi, quibusdam at nulla! Eligendi quia doloribus vero.
+                </p>
             </div>
         </div>
+
+    </div>
+    </div>
     </section>
     <!-- -----general info---------------- -->
     <section class="general">
@@ -377,8 +338,10 @@
             <div class="cards">
                 <div class="card1 hidden2">
                     <img src="images/user1.jpeg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, obcaecati veritatis laudantium ipsum maxime ab blanditiis adipisci expedita? Voluptatibus vitae similique eaque, et nisi soluta beatae libero odit? Dolores, quis?
-                        </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, obcaecati veritatis laudantium
+                        ipsum maxime ab blanditiis adipisci expedita? Voluptatibus vitae similique eaque, et nisi soluta
+                        beatae libero odit? Dolores, quis?
+                    </p>
                     <h2>Jelena Kovacevic Art</h2>
                     <div class="ratings">
                         <i class="fa fa-star"></i>
@@ -394,7 +357,9 @@
 
                 <div class="card2 hidden2">
                     <img src="images/user2.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolore quas similique eveniet odit, officia possimus eaque rem, iure officiis quibusdam labore omnis in illo alias quidem repudiandae recusandae. Obcaecati.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolore quas similique eveniet odit,
+                        officia possimus eaque rem, iure officiis quibusdam labore omnis in illo alias quidem
+                        repudiandae recusandae. Obcaecati.</p>
                     <h2>Frshmachine</h2>
                     <div class="ratings">
                         <i class="fa fa-star"></i>
@@ -413,8 +378,10 @@
             <div class="cardsS">
                 <div class="card3 hidden2">
                     <img src="images/user2.jpg" alt="">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, quo. Tempora quaerat iure sed perferendis assumenda blanditiis voluptatem eveniet excepturi. Placeat adipisci quidem commodi ratione temporibus, corrupti at recusandae quam.
-                        </p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, quo. Tempora quaerat iure sed
+                        perferendis assumenda blanditiis voluptatem eveniet excepturi. Placeat adipisci quidem commodi
+                        ratione temporibus, corrupti at recusandae quam.
+                    </p>
                     <h2>Shaker Alshanbari</h2>
                     <div class="ratings">
                         <i class="fa fa-star"></i>

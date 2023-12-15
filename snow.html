@@ -1,24 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="snow.css">
     <title>Document</title>
 </head>
+
 <body>
-    <!-- <section> -->
-    <div class="snowContainer">
-        <div class="snowflakes">
-            <span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span>
+    <section class="dent">
+        <div class="dentCont">
+            <div class="gif">
+                <h1>Dentistry Meets Medicine</h1>
+                <img src="images/video-human.gif" alt="">
+                <p>It is time to bring the mouth into the body.</p>
+            </div>
+            <div class="quote-box">
+                <h2>Question of the Day</h2>
+                <blockquote id="quote"></blockquote>
+                <div>
+                    <button class="infobtn" onclick="gentext();">New Info</button>
+                </div>
+                <div class="discount">
+                    <h2>Are you afraid of Dentists?</h2>
+                    <button class="no">No</button>
+                    <button class="yes">Yes</button>
+                </div>
+
+                <p class="yeah">Yahhoo! There's a 25% discount for you! Here's your coupon: BARAD123456</p>
+                <p class="nope">Woww!! Not many people are as brave as you are</p>
+            </div>
         </div>
-    </div>
-    <!-- </section> -->
+    </section>
+    <script>
+        function gentext(argument) {
+            const a = document.getElementById('quote');
+            const x = document.querySelector('.yes');
+            const y = document.querySelector('.no');
+            x.addEventListener('click',function(){
+                document.querySelector('.yeah').classList.add('active');
+                document.querySelector('.nope').classList.remove('active');
+            });
+            y.addEventListener('click',function(){
+                document.querySelector('.yeah').classList.remove('active');
+                document.querySelector('.nope').classList.add('active');
+            });
+
+            var word = ['Dentists are on the Verge of Extinction',
+                'Enamel is the Strongest material in your body',
+                'Some people have 38 teeth instead of 32.',
+                'There is no element in the periodic table that has J',
+                "The story about Newton's apple falling on his head is not true.",
+                'Alexander the Great died at age 33 from Malaria.',
+                'AIDS stands for Acquired ImmunoDeficiency Syndrome.',
+                'Pneumonia is the short term word for Pneuomonoultramicroscopicsilicovolcanoconiosis which is a disease caused in the lungs by inhaling silicon particles from volcanic debris.',
+                'Ada Lovelace is the first programmer in the world. She was the daughter of the poet Lord Byron!',
+                'The author of Lord of the Rings fought with Adolf Hitler in the Battle of Somme in World War I.',
+                'The Sinoatrial Node in the heart is responsible for exciting an electrical signal to keep the heart pace in rhythm',
+                "Einstein's theory of relativity states that time depends on speed and your relative position. The faster the object the slower time runs in its dimension!",
+                'The Small intestine is divided to 3 parts: deudenum, Jejenum & Ilium.',
+                'In chess, if you lose your queen in a blunder, forfeit the game.',
+                'Harry Houdini a famous American escape artist managed to hide keys in his throat!',
+                'The simplest math equation 3x + 1 is puzzling mathematicians to this day.',
+                'The Olympic Games occur every 4 years. Did you know the Greeks had set that rule 2400 years ago when they played the Olympics?',
+                'William Morrison, a Dentist, was the first to create cotton candy!'];
+            // var para = document.querySelector('blockquote');
+            a.innerHTML = word[Math.floor(Math.random()*word.length)];
+        //    para.innerHTML = word[Math.floor(Math.random()*word.length)];
+        }
+        gentext();
+    </script>
 </body>
+
 </html>
