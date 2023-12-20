@@ -320,6 +320,9 @@ section{
     margin-bottom: 0.5rem;
     color: #000435;
 }
+.titleF h1{
+    color: #f6f7f7;
+}
 .titleF h2{
     color: #92A4A8;
 }
