@@ -1,116 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="water.css">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.8.2/dist/es-module-shims.js"></script>
+    <script type="importmap">
+            {
+                "imports":{
+                    "three":"https://unpkg.com/three@0.159.0/build/three.module.min.js"
+                }
+            }
+        </script>
 </head>
+
 <body>
-    <section class="para">
-        <div class="wrapper">
-            <header>
-                <img src="images/banner1.jpg" class="background" alt="">
-                <img src="images/equiment.png" class="foreground" alt="">
-                <h1 class="title">Our Offers!</h1>
-            </header>
-            <div class="sect">
-                <div class="promo">
-                    <h4>Offers Just for You</h4>
-                    <h1>FREE Services</h1>
-                    <ul>
-                        <li><i class="fa fa-check"></i> Barad Dental welcomes new patients with free examinations.</li>
-                        <li><i class="fa fa-check"></i> Offer 2 Bla bla</li>
-                        <li><i class="fa fa-check"></i> Offer 3 lorem ipsum blabla</li>
-                    </ul>
-
-                    <a href="" class="btn">Contact Us</a>
+    <header>
+        <nav class="nav-bar">
+            <!-- <div class="contain"> -->
+                <div class="logo">
+                    <img class="star" src="images/logoCropped.png" alt="">
+                    <div>BaradDental</div>
                 </div>
+                <ul class="menu-items">
+                    <li>
+                        <a href="make-shift.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Services
+                            <!-- <i class="fa fa-chevron-down"></i> -->
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#" class="dr">Therapeutic
+                                    <!-- <i class="fa fa-chevron-right"></i> -->
+                                </a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="dr">Space maintainers</a></li>
+                                    <li>
+                                        <a href="#" class="dr">Teeth Restoration</a>
+                                        <ul class="submenu">
+                                            <li><a href="" class="dr">Restoring Carious Teeth</a></li>
+                                            <li><a href="" class="dr">Restoring Damaged teeth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dr">Teeth Replacement</a>
+                                        <ul class="submenu">
+                                            <li><a href="" class="dr">Replacing Missing Teeth</a></li>
+                                            <li><a href="" class="dr">Correcting Misaligned Teeth</a></li>
+                                            <li><a href="" class="dr">Replacing Imperfect Teeth</a></li>
+                                            <li><a href="" class="dr">Replacing partial or complete loss of Teeth with
+                                                    Implants</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dr">Infections & Problems</a>
+                                        <ul class="submenu">
+                                            <li><a href="" class="dr">Treating gum/bone diseases</a></li>
+                                            <li><a href="" class="dr">Treating Infected Teeth Abscesses</a></li>
+                                            <li><a href="" class="dr">Treating TMJ problems</a></li>
+                                            <li><a href="" class="dr">Replacing partial or complete loss of Teeth with
+                                                    Implants</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="dr">Professional Teeth Debridement</a></li>
+                                    <li><a href="#" class="dr">Depigmentation of Coloured Gums</a></li>
+                                    <li><a href="#" class="dr">Treating Bruxism with Night Guard</a></li>
+                                    <li><a href="#" class="dr">Treating ..Pedo</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dr">Preventive
+                                    <!-- <i class="fa fa-chevron-right"></i> -->
+                                </a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="dr">Fluoride application</a></li>
+                                    <li><a href="#" class="dr">Pit and Fissure Sealant</a></li>
+                                    <li><a href="#" class="dr">Systematic Recalls</a></li>
+                                    <li><a href="#" class="dr">Crowning Vulnerable Teeth</a></li>
+                                    <li><a href="#" class="dr">Crowning all Teeth</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dr">Cosmetics
+                                    <!-- <i class="fa fa-chevron-right"></i> -->
+                                </a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="dr">Hollywood Smile</a></li>
+                                    <li><a href="#" class="dr">Direct Veneers</a></li>
+                                    <li><a href="#" class="dr">Indirect Veneers</a></li>
+                                    <li><a href="#" class="dr">Nano-hybrid filled Composite fillings</a></li>
+                                    <li><a href="#" class="dr">Polishing</a></li>
+                                    <li><a href="#" class="dr">Teeth alignment</a></li>
+                                    <li><a href="#" class="dr">Teeth Size and shape Correction</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="dr">Programs for...</a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="dr">Smokers</a></li>
+                                    <li><a href="#" class="dr">Children</a></li>
+                                    <li><a href="#" class="dr">Tea & Coffee Lovers</a></li>
+                                    <li><a href="#" class="dr">Previous Patients</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Activities</a>
+                        <ul class="submenu">
+                            <li><a href="#" class="dr">Dental History</a></li>
+                            <li><a href="#" class="dr">Tour through Our Body</a></li>
+                            <li><a href="#" class="dr">WHOAAA!!</a></li>
+                            <li>
+                                <a href="#" class="dr">Tournaments</a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="dr">Challenge Zone</a></li>
+                                    <li><a href="#" class="dr">Hard Level</a></li>
+                                    <li><a href="#" class="dr">Medium Level</a></li>
+                                    <li><a href="#" class="dr">Easy Level</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="dr">Games & Quizes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="About.html" aria-current="page">About Us</a>
+                        <ul class="submenu">
+                            <li><a href="" class="dr">History</a></li>
+                            <li><a href="" class="dr">Mission</a></li>
+                            <li><a href="" class="dr">Values</a></li>
+                            <li>
+                                <a href="About.html #Our-Dentists" class="dr">Our Team</a>
+                                <ul class="submenu">
+                                    <li><a href="About.html" class="dr">Dr. Ayham Ammoura</a></li>
+                                    <li><a href="#" class="dr">Dr. Waad</a></li>
+                                    <li><a href="#" class="dr">Dr. Shmookh</a></li>
+                                    <li><a href="#" class="dr">Dr. Karam Zakzook</a></li>
+                                    <li><a href="#" class="dr">Dr. Yamsin</a></li>
+                                    <li><a href="#" class="dr">Dr. Ibrahim</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Gallery</a></li>
+                    <li class="move-right bxn">
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
+            <!-- </div> -->
+        </nav>
+    </header>
+    <section class="section-one">
+        <div class="container">
+            <div class="left-side">
+                <div class="title">
+                    <h1>Services of <img src="images/logoCropped.png" alt="" class="star star-s1">
+                        <br> Encompass ALL <br> Therapeutics
+                    </h1>
+                </div>
+                <p class="p">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quam aspernatur animi ut!
+                    Necessitatibus repellat minus nemo ut. Consequatur, sint doloremque sunt ipsa obcaecati minus
+                    impedit quidem quas quo iure?
+                </p>
+                <button class="LearnMore">Learn More(^^)</button>
             </div>
-            <section class="light-grey">
-                <div class="cta">
-                    <div class="row">
-                        <div class="grid">
-                            <div class="bg1"><!--<img src="images/wr.jpg" alt="">--></div>
-                            <div class="bg2"><!--<img src="images/makh.jpg" alt="">--></div>
-                            <!-- <div class="bg3">sdfsd<img src="images/praxis.jpg" alt=""></div> -->
-                            <div class="bg4"><!--<img src="images/prem2.jpg" alt="">--></div>
-                        </div>
-                        <div class="visit-us">
-                            <h1>Visit Us</h1>
-                            <p>We are honoured to be among the doctors of Platinum Tower, and would like you to pay us a
-                                visit at the 5th floor, King Fahd road.
-                            </p>
-
-                            <p> <i class="fa fa-map-marker"></i> King Fahd Br Rd, Al Faisaliyyah, Jeddah 23442
-                            </p>
-                            <p>
-                                <a href="https://maps.app.goo.gl/GF3MhYCt7jc9d8gH8" rel="noopener" target="_blank">
-                                    <strong>Get Directions</strong></a>
-                            </p>
-
-                            <p><i class="fa fa-clock-o"></i> Monday & Sunday 12:00 - 08:00 P.M.<br>
-                                Tuesday & Wednesday 10:00 A.M. - 06:00 P.M.<br>
-                                Monday & Sunday 12:00 - 08:00 P.M.</p>
-                        </div>
-                    </div>
-                    <div class="vistainer">
-                        <h1></h1>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14840.324913157827!2d39.176712!3d21.5827522!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d1d82254ef57%3A0x5dc69d32d4ac5b82!2zQmFyYWQgRGVudGFsIENsaW5pYyDYudmK2KfYr9in2Kog2KjYsdivINmE2YTYo9iz2YbYp9mG!5e0!3m2!1sen!2ssa!4v1700486188143!5m2!1sen!2ssa"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </section>
-
-            <!-- --------------------------footer------------------ -->
-            <footer class="footer">
-                <div class="cntr">
-                    <div class="row">
-                        <div class="foter-col">
-                            <h4>Barad Dental</h4>
-                            <ul>
-                                <li><a href="About.html">About Us</a></li>
-                                <li><a href="About.html #Our-Dentists">Our Dentists</a></li>
-                                <li><a href="#">Our Facilities</a></li>
-                                <li><a href="#">lorem</a></li>
-                            </ul>
-                        </div>
-                        <div class="foter-col">
-                            <h4>Services</h4>
-                            <ul>
-                                <li><a href="General.html">General</a></li>
-                                <li><a href="Cosmetics.html">Cosmetics</a></li>
-                                <li><a href="surgery.html">Surgical</a></li>
-                            </ul>
-                        </div>
-                        <div class="foter-col">
-                            <h4>Contact Us</h4>
-                            <ul>
-                                <li><a href="https://maps.app.goo.gl/GF3MhYCt7jc9d8gH8" rel="noopener" target="_blank">King
-                                        Fahd Br Rd, Al Faisaliyyah, <br>Jeddah 23442</a></li>
-                                <li><a href="tel:+966 565393118">(05) 65393118</a></li>
-                                <li><a href="mailto:ayhamammoura@yahoo.com">ayhamammoura@yahoo.com</a></li>
-                            </ul>
-                        </div>
-                        <div class="foter-col">
-                            <h4>Social</h4>
-                            <div class="social-links">
-                                <a href="https://wa.me/+966532371155" style="--i:7"><i class="fa fa-whatsapp"></i></a>
-                                <a href="https://www.facebook.com/baraddental/"><i class="fa fa-facebook"></i></a>
-                                <a href="https://twitter.com/BaradDentalKSA"><i class="fa fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/baraddental/"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="final">
-                        <h6>Dental Website by: Tasneem Ayham</h6>
-                    </div> -->
-                </div>
-            </footer>
+            <div class="right-side XR">
+                <img src="images/tooth5.png" alt="" class="gold glow image">
+            </div>
         </div>
     </section>
+    <section>
+        <div class="container">
+            <div class="left-side">
+                <div class="title">
+                    <h1>Fillings for <br>the long term</h1>
+                    <h2>Reasons for investing</h2>
+                    <img src="images/logoCropped.png" class="star star-s2" alt="">
+                </div>
 
+                <p class="p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolor aliquid dolore quas nulla
+                    delectus natus in cumque, rem autem. Provident repellendus quam nulla ratione quis quas suscipit?
+                    Beatae, deleniti.
+                </p>
+                <div class="line"></div>
+                <p class="p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto excepturi vero temporibus
+                    pariatur amet soluta ab odit qui iusto labore eveniet velit repellendus quisquam officia harum,
+                    itaque nihil quod fugit!
+                </p>
+                <button class="LearnMore">Learn More</button>
+            </div>
+            <div class="SE">
+                <img class="gold image" src="images/tooth2.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="thh">
+        <div class="container">
+            <div class="left-side">
+                <div class="title">
+                    <h1>Look at Crowns & <br> Bridges </h1>
+                    <h2>An unsurpassable treatment</h2>
+                </div>
+                <div class="type g-type">
+                    <p class="p">Crowns</p>
+                    <p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolorum accusantium
+                        assumenda hic
+                        et repudiandae necessitatibus, officiis minima repellat voluptatem facilis dolorem, laudantium
+                        consequuntur sunt cumque quaerat aspernatur, a obcaecati!</p>
+                </div>
+
+                <div class="line line-blue"></div>
+
+                <div class="type s=type">
+                    <p class="p">Bridges</p>
+                    <p class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt delectus dicta quibusdam
+                        est.
+                        Ducimus ipsam veritatis porro voluptatem praesentium ullam quis quae quidem aliquam aspernatur
+                        cupiditate provident, exercitationem, maiores beatae!</p>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="th">
+                <div class="right-side model-section heart"></div>
+            </div>
+        </div>
+        <section class="waVy">
+            <div class="wavy" id="wavy1" style="--i:1;"></div>
+            <div class="wavy" id="wavy2" style="--i:2;"></div>
+            <div class="wavy" id="wavy3" style="--i:3;"></div>
+            <div class="wavy" id="wavy4" style="--i:4;"></div>
+        </section>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="left-side">
+                <img src="images/logoCropped.png" class="star star-s4" alt="">
+                <div class="title titleF">
+                    <h1>Therapeutics</h1>
+                    <h2>Choose your stupid</h2>
+                </div>
+            </div>
+            <div class="right-side XR">
+                <p class="p serv">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ab sapiente voluptates
+                    cupiditate veniam. Deleniti dolore tempore temporibus ipsa omnis magnam obcaecati vel numquam
+                    laborum quisquam, veritatis eum dolor libero.
+                </p>
+                <!-- <div class="spacer line"></div> -->
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card card-1">
+                <img src="images/tooth4.png" alt="" class="img-card image">
+                <img src="images/surg.jpeg" alt="" class="bg">
+                <div class="color">
+                    <h3>Fillings</h3>
+                    <h5 class="hid">Replace your teeth you idiot. Look they look like rotten garbage. We can replace missing teeth.</h5>
+                </div>
+            </div>
+            <div class="card card-2">
+                <img src="images/tooth1.png" alt="" class="img-card image">
+                <img src="images/surg.jpeg" alt="" class="bg">
+                <div class="color">
+                    <h3>Space Maintainers</h3>
+                    <h5 class="hid">Replace your teeth you idiot. Look they look like rotten garbage. We can replace missing teeth.</h5>
+                </div>
+            </div>
+            <div class="card card-3">
+                <img src="images/tooth1.png" alt="" class="img-card image">
+                <img src="images/surg.jpeg" alt="" class="bg">
+                <div class="color">
+                    <h3>Teeth Restoration</h3>
+                    <h5 class="hid">Replace your teeth you idiot. Look they look like rotten garbage. We can replace missing teeth.</h5>
+                </div>
+            </div>
+            <div class="card card-4">
+                <img src="images/tooth4.png" alt="" class="img-card image">
+                <img src="images/surg.jpeg" alt="" class="bg">
+                <div class="color">
+                    <h3>Teeth Replacement</h3>
+                    <h5 class="hid">Replace your teeth you idiot. Look they look like rotten garbage. We can replace missing teeth.</h5>
+                </div>
+            </div>
+            <div class="card card-5">
+                <img src="images/tooth1.png" alt="" class="img-card image">
+                <img src="images/surg.jpeg" alt="" class="bg">
+                <div class="color">
+                    <h3>Infections & Problems</h3>
+                    <h5 class="hid">Replace your teeth you idiot. Look they look like rotten garbage. We can replace missing teeth.</h5>
+                </div>
+            </div>
+            <div class="card card-6">
+                <img src="images/tooth1.png" alt="" class="img-card image">
+                <img src="images/surg.jpeg" alt="" class="bg">
+                <div class="color">
+                    <h3>Professional Teeth Debridement</h3>
+                    <h5 class="hid">Replace your teeth you idiot. Look they look like rotten garbage. We can replace missing teeth.</h5>
+                </div>
+            </div>
+            <div class="card card-7">
+                <img src="images/tooth4.png" alt="" class="img-card image">
+                <img src="images/surg.jpeg" alt="" class="bg">
+                <div class="color">
+                    <h3>Depigmentation of Coloured Gums</h3>
+                    <h5 class="hid">Replace your teeth you idiot. Look they look like rotten garbage. We can replace missing teeth.</h5>
+                </div>
+            </div>
+            <div class="card card-8">
+                <img src="images/tooth1.png" alt="" class="img-card image">
+                <img src="images/surg.jpeg" alt="" class="bg">
+                <div class="color">
+                    <h3>Teeth Bruxism with Night Guard</h3>
+                    <h5 class="hid">Replace your teeth you idiot. Look they look like rotten garbage. We can replace missing teeth.</h5>
+                </div>
+            </div>
+            <div class="card card-9">
+                <img src="images/tooth1.png" alt="" class="img-card image">
+                <img src="images/surg.jpeg" alt="" class="bg">
+                <div class="color">
+                    <h3>Treating...Pedo</h3>
+                    <h5 class="hid">Replace your teeth you idiot. Look they look like rotten garbage. We can replace missing teeth.</h5>
+                </div>
+            </div>
+            <div class="card card-10">
+                <img src="images/tooth4.png" alt="" class="img-card image">
+                <img src="images/surg.jpeg" alt="" class="bg">
+                <div class="color">
+                    <h3>I don't know</h3>
+                    <h5 class="hid">Replace your teeth you idiot. Look they look like rotten garbage. We can replace missing teeth.</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-section">
+        <div class="custom-shape-divider-top-1703018325">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container" style="padding-bottom:2rem; max-width: 80%; padding-top: 10rem;">
+            <img src="images/logoCropped.png" alt="" class="star star-s5">
+            <div class="left-side">
+                <div class="title">
+                    <h1>Stay Up to Date</h1>
+                    <h2>With everything</h2>
+                </div>
+            </div>
+            <div class="LS">
+                <p class="txt">
+                    Replenish <span>Your site</span>
+                    with gold & silver <span>to diversity</span>
+                    your investment site.
+                </p>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="container sides" style="max-width: 80%;">
+            <div class="left-side">
+                <div class="logo">
+                    <img src="images/logoCropped.png" alt="" class="star">
+                    <div>BaradDental</div>
+                </div>
+                <p class="p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit vero iusto rem odit ut placeat
+                    reprehenderit deleniti ipsam, necessitatibus pariatur ad voluptatibus odio velit cumque vel alias
+                    eaque commodi! Molestias?
+                </p>
+            </div>
+            <div class="LS">
+                <ul class="menu">
+                    <li><a class="aFooot" href="">Resources</a></li>
+                    <li><a class="aFooot" href="">About</a></li>
+                    <li><a class="aFooot" href="">Our Team</a></li>
+                    <li><a class="aFooot" href="">Services</a></li>
+                    <li><a class="aFooot" href="">Dentists</a></li>
+                    <li><a class="aFooot" href="">Barad</a></li>
+                    <li><a class="aFooot" href="">blabla1</a></li>
+                    <li><a class="aFooot" href="">blabla2</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container" style="max-width: 80%;">
+            <div class="left-side">
+                <p> &copy; copyright 2023 . Alll rights reserved</p>
+            </div>
+            <div class="LS right">
+                <p>Terms and conditions</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let wavy1 = document.getElementById('wavy1');
+        let wavy2 = document.getElementById('wavy2');
+        let wavy3 = document.getElementById('wavy3');
+        let wavy4 = document.getElementById('wavy4');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY/4;
+
+            wavy1.style.backgroundPositionX = 400 + value * 4 + 'px';
+            wavy2.style.backgroundPositionX = 300 + value * -4 + 'px';
+            wavy3.style.backgroundPositionX = 200 + value * 2 + 'px';
+            wavy4.style.backgroundPositionX = 100 + value * -2 + 'px';
+        })
+    </script>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+<script type="module" src="3D.js"></script>
+
 </html>

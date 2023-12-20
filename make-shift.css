@@ -285,15 +285,6 @@ nav a{
     z-index: 0;
 }
 @media(min-width: 901px) and (max-width: 1080px){
-    #myVid{display:none;}
-    .banner{
-        background-image: url(images/banner1.jpg);
-        background-position: center right;
-        background-size: cover;
-    }
-    .container{
-        padding-left: 29px;
-    }
     .navlist a{
         padding: 1rem 1rem;
         font-size: 1.4rem;
@@ -1161,7 +1152,7 @@ nav a{
     background-position: center;
     position: relative;
     display: table;
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     background-attachment: fixed;
 }
@@ -1179,8 +1170,8 @@ nav a{
     vertical-align: text-bottom;
     justify-content: center;
     background-color: lightsteelblue;
-    margin-top: 35%;
-    margin-bottom: 5%;
+    margin-top: 150px;
+    margin-bottom: 150px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 .promo h4{
@@ -1456,6 +1447,7 @@ ul{
     font-size: 34px;
     color: white;
     text-transform: capitalize;
+    margin-top: 59px;
     margin-bottom: 35px;
     font-weight: 500;
     position: relative;
@@ -1761,6 +1753,7 @@ ul{
 }
 .details h3,h4{
 	font-size: 22px;
+    line-height: 1.5rem;
     margin-bottom: 3px;
 	color: black;
 }
