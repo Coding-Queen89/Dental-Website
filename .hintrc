@@ -35,6 +35,12 @@
           "min-height: auto"
         ]
       }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
     ]
   }
 }

@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <div id="preloader"></div>
     <header>
         <div class="container">
             <a href=""><img src="images/logo.png" alt=""></a>
@@ -123,13 +124,13 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="About.html" aria-current="page">About Us</a>
+                    <a href="About.html #Our-Team" aria-current="page">About Us</a>
                     <ul class="submenu">
                         <li><a href="" class="dr">History</a></li>
                         <li><a href="" class="dr">Mission</a></li>
                         <li><a href="" class="dr">Values</a></li>
                         <li>
-                            <a href="About.html #Our-Dentists" class="dr">Our Team</a>
+                            <a href="About.html#Our-Team" class="dr">Our Team</a>
                             <ul class="submenu">
                                 <li><a href="About.html" class="dr">Dr. Ayham Ammoura</a></li>
                                 <li><a href="#" class="dr">Dr. Waad</a></li>
@@ -522,6 +523,15 @@
     <script src="main.js"></script>
     <script src="particles.min.js"></script>
     <script src="app.js"></script>
+
+    <script>
+        var loader = document.getElementById('preloader');
+        window.addEventListener("load", function(){
+            loader.style.display = 'none';
+        })
+    </script>
+
+
 </body>
 
 </html>

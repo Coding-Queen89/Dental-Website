@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --index: calc(1vw + 1vh);
+    --gutter: 30px;
+    --size-small: 26;
+    --size-big: 36;
+    --depth: 4000px;
+    --transition: 0.75s cubic-bezier(0.075, 0.5 , 0, 1);
+}
+@font-face{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+/*Navbar starts*/
+.header{
+    height: 100vh;
+    background: url(images/old\ parchment.jpeg);
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+/*Navbar ends.*/
+.history{
+    background-color: #000;
+    /* background: url(images/old\ parchment.jpeg);
+    background-attachment: fixed; */
+    color: white;
+    font-size: calc(var(--index) * 0.8);
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.75;
+    height: var(--depth);
+    font-weight: 300;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    perspective: 1500px;
+}
+.gallery{
+    transform-style: preserve-3d;
+    height: 100%;
+}
+.frame{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition), opacity 0.75s ease;
+    will-change: transform;/*this will eliminate any freezes or cutters so
+    that everything works smoothly*/
+    transform-style: preserve-3d;
+}
+h2, h3, h4{
+    font-weight: 100;
+    text-transform: uppercase;
+    width: min-content;
+    line-height: 1;
+}
+.frame h2{
+    text-align: center;
+    font-size: calc(var(--index) * 3.3);
+}
+.frame-media{
+    position: relative;
+    /* border-radius: 60px; */
+    /*We will calculate the width & height from screen resolution
+    we will take the index and multiply the ind by the width will be teh long side
+    size-big*/
+    width: calc(var(--index) * var(--size-big));
+    height: calc(var(--index) * var(--size-big));
+    background-position: center;
+    background-size: cover;
+}
+.frame-media_left{
+    right: calc(var(--size-small)/2 * var(--index) + var(--gutter));
+}
+.frame-media_right{
+    left: calc(var(--size-small)/2 * var(--index) + var(--gutter));
+}
+.frame-bg{
+    background-color: rgb(0 0 0 /0.87);
+}
+video.frame-media{
+    width: calc(var(--index) * var(--size-big));
+    height: calc(var(--index) * var(--size-small));
+}
+video.frame-media_right{
+    left: calc(var(--size-big)/2 * var(--index) + var(--gutter));
+}
+video.frame-media_left{
+    right: calc(var(--size-big)/2 * var(--index) + var(--gutter));
+}
+.text-right > *{
+    position: relative;
+    left: 18vw;
+}
+.text-left > *{
+    position: relative;
+    right: 18vw;
+}
+.frame h3{
+    font-size: calc(var(--index) * 3);
+}
+.frame p{
+    max-width: 30vw;
+    margin-top: 3vh;
+}
+.soundbutton{
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+    cursor: pointer;
+    width: 24px;
+    transition: 0.25s ease;
+}
+.soundbutton.paused{
+    opacity: 0.25;
+}
+.custom-shape-divider-top-1703406931 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 0;
+}
+
+.custom-shape-divider-top-1703406931 svg {
+    position: relative;
+    display: block;
+    width: calc(174% + 1.3px);
+    height: 251px;
+    z-index: 0;
+}
+
+.custom-shape-divider-top-1703406931 .shape-fill {
+    fill: #000;
+}
